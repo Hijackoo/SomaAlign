@@ -1,0 +1,8 @@
+SomaAlign includes modified portions of Meta Platforms' ImageBind implementation.
+
+The ImageBind-derived source files retain their upstream copyright notices and
+are covered by the CC BY-NC-SA 4.0 license included in LICENSE. The model and
+data pipeline in this repository are research software and are provided without
+training data or model weights.
+
+Upstream project: https://github.com/facebookresearch/ImageBind

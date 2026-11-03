@@ -1,0 +1,28 @@
+# Model artifacts
+*.ckpt
+*.pt
+*.pth
+*.bin
+
+# Dataset and split artifacts
+annotations/
+labels/
+data_root/
+dataset_splits/*.json
+*.xlsx
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Evaluation outputs
+results/
+*.log
+
+# Local environments and editor files
+.venv/
+.idea/
+.vscode/
+.DS_Store
+.pytest_cache/
+.mypy_cache/

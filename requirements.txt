@@ -1,0 +1,22 @@
+# SomaAlign inference and retrieval dependencies.
+# Tested locally with Python 3.10, torch 2.6.0+cu124, and torchvision 0.21.0+cu124.
+# Install a torch/torchvision build appropriate for your system first.
+
+# Data processing
+numpy>=1.24
+pandas>=2.0
+Pillow>=10.0
+openpyxl>=3.0
+
+# Model utilities
+timm>=0.9.0
+einops>=0.7
+ftfy>=6.0
+regex
+iopath>=0.1.9
+
+# Utilities
+tqdm>=4.60
+
+# OpenCLIP (used by ImageBind backbone)
+open-clip-torch>=3.0
