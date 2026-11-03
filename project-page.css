@@ -1,0 +1,288 @@
+/* SomaAlign academic project page. */
+
+:root {
+  color-scheme: light;
+  --page-width: 1060px;
+  --text: #202124;
+  --muted: #5f6368;
+  --border: #dadce0;
+  --button: #2f3337;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: #ffffff;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--text);
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-container {
+  width: min(calc(100% - 40px), var(--page-width));
+  margin: 0 auto;
+}
+
+.paper-header {
+  padding: 76px 0 58px;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 1040px;
+}
+
+.resource-note {
+  margin: 18px auto 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.resource-note a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+h1 {
+  max-width: 1000px;
+  margin: 0 auto 26px;
+  font-size: clamp(2rem, 4.1vw, 3.25rem);
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: -0.035em;
+}
+
+.authors,
+.affiliations {
+  margin: 0;
+}
+
+.authors {
+  font-size: 1.18rem;
+  font-weight: 500;
+}
+
+.affiliations {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.publication-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 88px;
+  padding: 8px 18px;
+  border: 1px solid var(--button);
+  border-radius: 999px;
+  background: var(--button);
+  color: #ffffff;
+  font-size: 0.94rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+  transition: background-color 140ms ease, color 140ms ease;
+}
+
+.publication-link:hover,
+.publication-link:focus-visible {
+  background: #ffffff;
+  color: var(--button);
+}
+
+.publication-link:focus-visible {
+  outline: 3px solid rgba(47, 51, 55, 0.2);
+  outline-offset: 3px;
+}
+
+.video-section {
+  padding: 68px 0;
+}
+
+.video-section:first-child {
+  padding-top: 48px;
+}
+
+.video-section h2 {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: clamp(1.55rem, 2.5vw, 2rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.section-description {
+  max-width: 880px;
+  margin: 0 auto 27px;
+  color: #3c4043;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000000;
+}
+
+.video-frame video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000000;
+}
+
+.meta-section {
+  padding: 54px 0 18px;
+}
+
+.meta-section + .meta-section {
+  padding-top: 40px;
+}
+
+.meta-content {
+  max-width: 960px;
+}
+
+.meta-section h2 {
+  margin: 0 0 18px;
+  font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.meta-section pre {
+  margin: 0;
+  padding: 18px 20px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  background: #f8f9fa;
+  color: var(--text);
+  font: 0.9rem/1.55 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  white-space: pre;
+}
+
+.supplementary-links {
+  margin: 0 0 20px;
+}
+
+.supplementary-preview {
+  display: block;
+  width: 100%;
+  height: 75vh;
+  min-height: 360px;
+  max-height: 900px;
+  border: 1px solid var(--border);
+}
+
+.acknowledgements p {
+  margin: 0;
+  color: #3c4043;
+}
+
+.page-footer {
+  margin-top: 55px;
+  padding: 28px 0 34px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.page-footer p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .page-container {
+    width: min(calc(100% - 28px), var(--page-width));
+  }
+
+  .paper-header {
+    padding: 50px 0 36px;
+  }
+
+  h1 {
+    margin-bottom: 22px;
+    font-size: clamp(1.85rem, 9vw, 2.55rem);
+    letter-spacing: -0.025em;
+  }
+
+  .authors {
+    font-size: 1.05rem;
+  }
+
+  .publication-links {
+    margin-top: 21px;
+  }
+
+  .publication-link {
+    min-width: 82px;
+    padding: 8px 15px;
+  }
+
+  .video-section,
+  .video-section:first-child {
+    padding: 47px 0;
+  }
+
+  .video-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.45rem;
+  }
+
+  .section-description {
+    margin-bottom: 21px;
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .page-footer {
+    margin-top: 38px;
+  }
+
+  .meta-section {
+    padding-top: 42px;
+  }
+
+  .meta-section pre {
+    padding: 15px 16px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .publication-link {
+    transition: none;
+  }
+}
